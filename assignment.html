@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <!-- icon樣式載入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts字體樣式 -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <!-- bs4 css樣式  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 自己寫的scss+ bs4 scss編譯的css -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- 左側 haeder menu 選單 -->
+    <div id="app" class="d-flex"> 
+      <header class="d-flex flex-column justify-content-between">
+          <ul class="d-flex flex-column index"> 
+              <h1>
+                  <a href=""><img src="./assets/images/logo-ANSWER.svg" alt="" /></a>
+              </h1>
+              <li>
+                  <span class="material-icons">
+                      insert_chart
+                  </span>
+                  Dashboard
+              </li>
+              <li><span class="material-icons"> forum </span>Question</li>
+              <li class="assignment">
+                  <span class="material-icons">
+                      assignment
+                  </span>
+                  <a href="./index.html">
+                      Assignment
+                  </a>
+              </li>
+              <li><span class="material-icons"> video_library </span>Course</li>
+              <li class="admin">
+                  <span class="material-icons"> supervisor_account </span>
+                  <a href="#">
+                      Admin
+                  </a>
+              </li>
+              <li><span class="material-icons"> settings </span>Settings</li>
+          </ul>
+          <div class="user d-flex">
+              <img src="./assets/images/andychen.jpeg" alt="" />
+              <div>
+                  <p>Andy Chen</p>
+                  <p>andy0401@mail.com</p>
+              </div>
+          </div>
+      </header>
+
+      <!-- 右側內容 -->
+      <main class="flex-grow-1">
+          
+<!-- 上方 -->
+<nav data-id="index"> 
+  <ul class="d-flex justify-content-between flex-wrap">
+      <li>
+          <span>Assignment</span>
+          <span>All Courses</span>
+          <span class="material-icons more">
+              expand_more
+          </span>
+      </li>
+      <li>
+          <span class="material-icons">
+              search
+          </span>
+          <span class="material-icons">
+              notifications_active
+          </span>
+      </li>
+  </ul>
+</nav>
+
+<!-- 下方 -->
+<section class="content d-flex justify-content-between flex-wrap">
+  <!-- 左 -->
+  <div class="allComments">
+      <p class="d-flex">
+          All (4)
+          <span class="material-icons more">
+              expand_more
+          </span>
+      </p>
+      <ul>
+          <li>
+              <p class="d-flex justify-content-between">
+                  <span>Chapter Assignment 2</span>
+                  <span>4 hrs ago</span>
+              </p>
+              <p class="d-flex justify-content-between">
+                  <span class="title">Please check this file…</span>
+                  <span class="name">Emily Wang</span>
+              </p>
+          </li>
+          <li>
+              <p class="d-flex justify-content-between">
+                  <span>Chapter Assignment 1</span>
+                  <span>12 hrs ago</span>
+              </p>
+              <p class="d-flex justify-content-between">
+                  <span class="title">My Homework</span>
+                  <span class="name">David Xu</span>
+              </p>
+          </li>
+          <li>
+              <p class="d-flex justify-content-between">
+                  <span>Final Assignment</span>
+                  <span>18 hrs ago</span>
+              </p>
+              <p class="d-flex justify-content-between">
+                  <span class="title">Have a problem with this…</span>
+                  <span class="name">Tony Wei</span>
+              </p>
+          </li>
+          <li>
+              <p class="d-flex justify-content-between">
+                  <span>Final Assignment</span>
+                  <span>19 hrs ago</span>
+              </p>
+              <p class="d-flex justify-content-between">
+                  <span class="title">Did I do it right?</span>
+                  <span class="name">Christina Lin</span>
+              </p>
+          </li>
+      </ul>
+  </div>
+  
+  <!-- 右 -->
+  <div class="comment">
+    <!-- 上半部(小字部分) -->
+      <p class="text-right">
+          2 comments
+      </p>
+      <ul class="comments">
+        <!-- 下半部(title部分) -->
+          <li class="title d-flex justify-content-between align-items-center">
+              <div>
+                  <p>Chapter Assignment 2 / HTML&CSS</p>
+                  <p>Please check this file for me, thanks!</p>
+              </div>
+              <span class="material-icons"> more_vert </span>
+          </li>
+
+          <!-- content -->
+          <li>
+            <!-- Emily content -->
+              <article>
+                  <div class="userName d-flex">
+                      <img src="./assets/images/emilywang.jpeg" alt="" />
+                      <p class="user d-flex flex-column">
+                          <span>Emily Wang</span>
+                          <span>10:38 AM (4 hours ago)</span>
+                      </p>
+                  </div>
+                  <div class="userContent">
+                      <div>
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in
+                          the following code the height of the
+                          <span>div</span>
+                          is bigger than the height of the
+                          <span>img</span>
+                          ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br />
+                          What is the gap or extra space below image?
+                      </div>
+                      <button>
+                          <span class="material-icons">
+                              attach_file
+                          </span>
+                          <a
+                              download
+                              href="https://material.io/resources/icons/?search=chevron_right&icon=chevron_right&style=baseline">
+                              HW-2-David.zip</a>
+                            
+                      </button>
+                      <hr />
+                  </div>
+              </article>
+
+              <!-- Andy content -->
+              <article>
+                  <div class="userName d-flex">
+                      <img src="./assets/images/andychen.jpeg" alt="" />
+                      <p class="user d-flex flex-column">
+                          <span>Andy Chen (You)</span>
+                          <span>13:24 AM (1 hours ago)</span>
+                      </p>
+                      <p class="userEdit">
+                          <span class="material-icons">
+                              star_border
+                          </span>
+                          <span class="material-icons">
+                              create
+                          </span>
+                      </p>
+                  </div>
+                  <div class="userContent">
+                      <div class="userYourself">
+                          Hi David, by default, an image is rendered inline, like a letter so it sits on the<br />
+                          same line that a, b, c and d sit on. There is space below that line for the<br />
+                          descenders you find on letters like g, j, p and q.
+                          <br />
+                          <br />
+                          You can:
+                          <br />
+                          <br />
+
+                          <p>
+                              • adjust the <span>vertical-align</span> of the image to position it elsewhere (e.g. the
+                              <span>middle</span> ) or
+                          </p>
+                          <p>• change the <span>display</span> so it isn’t inline.</p>
+                      </div>
+                  </div>
+              </article>
+          </li>
+      </ul>
+
+      <div class="commentFooter d-flex justify-content-between align-items-center position-relative">
+          <div class="arrowChange">
+              <span class="material-icons">
+                  chevron_left
+              </span>
+              <span class="material-icons">
+                  chevron_right
+              </span>
+          </div>
+
+          <div class="buttonHandler">
+              <button>Mark as read</button>
+              <button class="openReply">Reply</button>
+          </div>
+         
+          <!-- bodyText  -->
+          <div class="bodyText position-absolute">
+            <!-- bodyText header -->
+              <ul class="bodyTextHeader d-flex align-items-center">
+                  <select>
+                      <option value="Body Text">Body Text</option>
+                  </select>
+                  <li>
+                      <i class="material-icons">format_bold</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">format_italic</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">format_list_bulleted</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">format_list_numbered</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">insert_photo</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">insert_link</i>
+                  </li>
+                  <li>
+                      <i class="material-icons">chevron_left</i>
+                      <i class="material-icons">chevron_right</i>
+                  </li>
+              </ul>
+              <!-- bodyText content -->
+              <textarea name="" id="" cols="30" rows="10" placeholder="Reply an answer…"></textarea>
+              <!-- bodyText btn --> 
+              <div class="btnHandler">
+                  <button class="cancel">Cancel</button>
+                  <button class="reply">Reply</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- 切換button text的scrip  -->
+<script>
+  let openReplyBtn = document.querySelector(".openReply")
+  let cancelBtn = document.querySelector(".cancel")
+  let bodyText = document.querySelector(".bodyText")
+  openReplyBtn.addEventListener("click", function (e) {
+      console.log(e)
+      bodyText.style.width = "100%"
+      bodyText.style.height = "332px"
+  })
+  cancelBtn.addEventListener("click", function (e) {
+      bodyText.style.width = "0%"
+      bodyText.style.height = "0px"
+  })
+</script>
+
+      </main>
+
+  </div>
+
+
+   <script src="./assets/js/vendors.js"></script> 
+   <script src="./assets/js/all.js"></script>
+
+
+  </body>
+
+</html>
